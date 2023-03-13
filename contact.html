@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact - Passion Plante</title>
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Starting de la page d'accueil -->
+        <header>
+            <div class="logo">
+                <a href="index.html"><img src="#" alt="logo" title="Passion Plante"></a>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="encyclopedia.html">Encyclopédie</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="find">
+            <h1>Où nous trouver ?</h1>
+            <div>
+
+            </div>
+        </div>
+        <div id="gmaps">
+            <!-- API Google Maps -->
+        </div>
+        <div id="form-contact">
+            <form method="post" action="#">
+                <div class="form">
+                    <div class="one"><label for="name">Nom : </label></div>
+                    <div class="two"><input type="text" name="name" placeholder="Indiquez ici votre nom" id="name" size="69px" required></div>
+                    <div class="three"><label for="mail">Email : </label></div>
+                    <div class="four"><input type="email" name="mail" id="mail" placeholder="Indiquez votre email" size="69px" required></div>
+                    <div class="five"><label for="message">Message : </label></div>
+                    <div class="six"><textarea name="message" placeholder="Que souhaitez-vous nous communiquer ?" cols="80" rows="10" required></textarea></div>
+                    <input type="submit" value="Envoyer" action="form.php" id="send-message">
+                </div>
+            </form>
+        </div>
+        <footer>
+            <p>Des copyright, des liens "Social media",..</p>
+        </footer>
+    </body>
+</html>
