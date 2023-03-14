@@ -5,7 +5,6 @@
 body
 {
     font-family: sans-serif;
-    background-color: #39FFB2;
     margin:0;
 }
 
@@ -18,46 +17,73 @@ h1
 {
     font-size: 2.5em;
 }
-#presentation
+footer
 {
-    background-color: #33D496;
+    display: flex;
+    /* padding: 30px 0 30px 0; */
     width: 100%;
+    position: relative;
+    bottom: 0;
+}
+.logo
+{
+    margin: 10px;
+    width: 7%;
+}
+.logo img
+{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.copyright
+{
+    margin: auto;
+    font-style: italic;
+}
+.social
+{
+    padding-top: 35px;
+}
+.social a
+{
+    margin-right: 20px;
+}
+#navbarh
+{
+    position: absolute;
+    right: 30px;
+    top: 20px;
+}
+.navbar-nav
+{
+    background-color: #FFF;
 }
 header
 {
     background-color: #FFF;
+    height: 100px;
 }
-footer
+.posts
 {
-    background-color: #FFF;
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-}
-nav ul
-{
-    display: flex;    
-    flex-direction: row;
-    justify-content: space-between;
-    width: 20%;
-    position: left;
-}
-nav li
-{
-    list-style-type: none;
-}
-.pictures,.posts
-{
-    background-color: aliceblue;
     max-width: 1080px;
     margin: auto;
     display: grid;
     grid-template-rows: 200px;
     gap: 10px;
 }
+#posts-div
+{
+    margin: 100px 0 180px;
+    text-align: center;
+}
+#posts-div h1
+{
+    color: #33D496;
+}
 .posts
 {
-    
+    margin-top: 100px;
     height: 250px;
     grid-template-columns: 1fr 1fr 1fr;
 }
@@ -67,29 +93,13 @@ nav li
     max-width: 100%;
     height: 250px;
 }
-.pictures
-{
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-.pictures img
-{
-    max-width: 100%;
-    height: 200px;
-}
+
 .link-hover
 {
     position: relative;
     color: black;
     opacity: 0.8;
     height: 250px;
-
-}
-.pic-hover
-{
-    position: relative;
-    color: black;
-    opacity: 0.8;
-    height: 200px;
 
 }
 .middle
@@ -110,10 +120,7 @@ nav li
 {
     display: block;
 }
-.pic-hover:hover .middle
-{
-    display: block;
-}
+
 table
 {
     border-radius: 10px;
@@ -128,6 +135,266 @@ td
     padding-top: 10px;
     padding-bottom: 10px;
     min-width: 200px;
+}
+
+#presentation
+{
+    background-color: #33D496;
+    width: 100%;
+    padding: 50px 0 50px 0;
+}
+#presentation h1
+{
+    color: #39FFB2;
+    padding-bottom: 50px;
+
+}
+#pres-bloc
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: blue; */
+    text-align: center;
+    max-width: 1080px;
+    margin: auto;
+    padding: 0 5% 0 5%;
+}
+.pres-txt
+{
+    width: 50%;
+    text-align: center;
+}
+.pres-img
+{
+    
+    width: 25%;
+}
+.pres-img img
+{
+    width: 100%;
+}
+#redac
+{
+    background-color: #39FFB2;
+    width: 100%;
+    padding: 50px 0 50px 0;
+}
+#redac h1
+{
+    color: #33D496;
+}    
+#redac h2
+{
+    color: brown;
+}
+.redac-bloc
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: blue; */
+    text-align: center;
+    max-width: 1080px;
+    margin: auto;
+    padding: 0 5% 0 5%;
+}
+.redac-choice
+{
+    width: 30%;
+}
+.redac-img
+{
+    width: 30%;
+}
+.redac-img img
+{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.redac-txt
+{
+    /* background-color: red; */
+    width: 60%;
+    text-align: center;
+}
+.redac-rand
+{
+    /*police diff de stand*/
+    font-size: 20px;
+    margin: auto;
+    width: 80%;
+    padding: 50px 0 100px 0;
+}
+
+
+/*Page ENCYCLOPEDIA
+A SPLIT
+MVC*/
+
+
+.plant-rand
+{
+    padding-top: 50px;
+    background-color: #33D496;
+    display: flex;
+    flex-wrap: wrap;
+}
+.css-enc
+{
+    
+    position: absolute;
+    right: 220px;
+    top: 217px;
+    padding: 20px;
+    background: rgb(51,212,150);
+    background: linear-gradient(90deg, 
+    rgba(57,255,178,1) 0%, 
+    rgba(54,233,161,1) 20%, 
+    rgba(51,212,150,1) 100%);
+    height: 600px;
+    border: 1px solid #33BB88;
+    border-radius: 10px;
+}
+.css-enc a 
+{
+    color: brown;
+}
+.css-enc a:hover
+{
+    color: #c5aa8c;
+} 
+main
+{
+    margin: auto;
+    padding-bottom: 100px;
+}
+#spec
+{
+    max-width: 1080px;
+    margin: auto;
+}
+#spec h1
+{
+    padding-bottom: 20px;
+}
+#desc
+{
+    padding-left: 30px;
+    width: 90%;
+    text-align: justify;
+}
+
+.need
+{
+    margin : 40px 0 50px 1.5%;
+
+}
+.need h3
+{
+    font-size: 1.5em;
+    text-decoration: underline;
+}
+.need p
+{
+    padding-left: 0.5%;
+}
+.pic-hover:hover .middle
+{
+    display: block;
+}
+.pic-hover
+{
+    position: relative;
+    color: black;
+    opacity: 0.8;
+    height: 200px;
+}
+.pictures
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 200px;
+    gap: 10px;
+    max-width: 1080px;
+    margin: 50px auto 0 auto;
+}
+.pictures img 
+{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pictures img
+{
+    max-width: 100%;
+    height: 200px;
+}
+
+
+/* PAGE CONTACT
+A SPLIT
+MVC
+*/
+#find
+{
+    display: flex;
+    background-color: #33D496;
+}
+.find-box
+{
+    margin: auto;
+    padding: 100px 0 400px 0;
+}
+#find h1
+{
+    max-width: 1080px;
+}
+#find
+{
+    background-color: #33D496;
+    width: 100%;
+    padding: 100px 0 150px 0;
+}
+#find h1
+{
+    color: #39FFB2;
+    padding-bottom: 50px;
+
+}
+#find-bloc
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: blue; */
+    text-align: center;
+    max-width: 1080px;
+    margin: auto;
+    padding: 0 5% 0 5%;
+}
+.find-txt
+{
+    width: 50%;
+    text-align: left;
+    padding-left: 100px;
+}
+.find-img
+{
+    width: 50%;
+}
+.find-img img
+{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 2px 4px 10px #397;
+}
+#form-contact
+{
+    padding: 100px 0 100px 0;
+    color: brown;
+    background-color: #39FFB2;
 }
 .form
 {
@@ -169,7 +436,18 @@ td
 {
     padding: 15px 0px 15px 0px;
 }
+.two input, .four input, .six textarea
+{
+    border-radius: 8px;
+}
+.form-lab
+{
+    font-style: oblique;
+}
 #send-message
 {
-    margin-left: 30px;
+    display: block;
+    margin: auto;
+    padding: 10px 30px 10px 30px;
 }
+
