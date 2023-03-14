@@ -1,0 +1,113 @@
+#find
+{
+    display: flex;
+    background-color: #33D496;
+}
+.find-box
+{
+    margin: auto;
+    padding: 100px 0 400px 0;
+}
+#find h1
+{
+    max-width: 1080px;
+}
+#find
+{
+    background-color: #33D496;
+    width: 100%;
+    padding: 100px 0 150px 0;
+}
+#find h1
+{
+    color: #39FFB2;
+    padding-bottom: 50px;
+
+}
+#find-bloc
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: blue; */
+    text-align: center;
+    max-width: 1080px;
+    margin: auto;
+    padding: 0 5% 0 5%;
+}
+.find-txt
+{
+    width: 50%;
+    text-align: left;
+    padding-left: 100px;
+}
+.find-img
+{
+    width: 50%;
+}
+.find-img img
+{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 2px 4px 10px #397;
+}
+#form-contact
+{
+    padding: 100px 0 100px 0;
+    color: brown;
+    background-color: #39FFB2;
+}
+.form
+{
+    max-width: 720px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin: auto;
+}
+.one
+{
+    grid-column: 1/2 ;
+}
+.two
+{
+    grid-column: 2/7 ;
+}
+.three
+{
+    grid-column: 1/2 ;
+}
+.four
+{
+    grid-column: 2/7 ;
+}
+.five
+{
+    grid-column: 1/7 ;
+    padding: 15px 0px 0px 30px;
+}
+.six
+{
+    grid-column: 1/7 ;
+}
+.one, .three, .six
+{
+    padding: 15px 0px 15px 30px;
+}
+.two, .four
+{
+    padding: 15px 0px 15px 0px;
+}
+.two input, .four input, .six textarea
+{
+    border-radius: 8px;
+}
+.form-lab
+{
+    font-style: oblique;
+}
+#send-message
+{
+    display: block;
+    margin: auto;
+    padding: 10px 30px 10px 30px;
+}
