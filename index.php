@@ -13,7 +13,7 @@
         <!-- Starting de la page d'accueil -->
         <header>
             <div class="logo">
-                <a href="index.html"><img src="logo.jpg" alt="logo" title="Passion Plante"></a>
+                <a href="index.php"><img src="img/logo.jpg" alt="logo" title="Passion Plante"></a>
             </div>
             <div id="navbarh">
                 <nav class="navbar navbar-expand-lg navbar-light">
@@ -23,13 +23,13 @@
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul class="navbar-nav">
                             <li class="nav-item active">
-                                <a class="nav-link" href="index.html">Accueil<span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="index.php">Accueil<span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="encyclopedia.html">Encyclopédie</a>
+                                <a class="nav-link" href="encyclopedia.php">Encyclopédie</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="contact.html">Contact</a>
+                                <a class="nav-link" href="contact.php">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -58,7 +58,7 @@
                     </p>
                 </div>
                 <div class="pres-img">
-                    <img src="pres-pic.jpg">
+                    <img src="img/pres-pic.jpg">
                 </div>
             </div>
         </div>
@@ -66,15 +66,15 @@
             <h1>Derniers posts</h1>
             <div class="posts">
                 <a href="#" class="link-hover">
-                    <img src="black.png">
+                    <img src="img/black.png">
                     <div class="middle">Nom de la plante</div>
                 </a>
-                <a href="encyclopedia.html#spec" class="link-hover">
-                    <img src="wp4.jpg">
+                <a href="encyclopedia.php#spec" class="link-hover">
+                    <img src="img/wp4.jpg">
                     <div class="middle">Nom de la plante</div>
                 </a>
                 <a href="#" class="link-hover">
-                    <img src="black.png">
+                    <img src="img/black.png">
                     <div class="middle">Nom de la plante</div>
                 </a>
             </div>
@@ -82,7 +82,7 @@
         <div id="redac">
             <div class="redac-bloc">
                 <div class="redac-img">
-                    <img id="redac-rand-img" src="sanseveria.jpg">
+                    <img id="redac-rand-img" src="img/sanseveria.jpg">
                     <h2>Sansevieria</h2>
                 </div>
                 <div class="redac-txt">
@@ -105,7 +105,7 @@
                             La sansevieria est idéale en hiver, et grâce à ses feuilles graphiques et design, c'est la plante parfaite 
                             pour embellir nos décors !
                         </p>
-                        <a href="#" alt="Choix de la Rédac"><button type="button" class="btn btn-success">Venez la découvrir</button></a>
+                        <a href="encyclopedia.php" alt="Choix de la Rédac"><button type="button" class="btn btn-success">Venez la découvrir</button></a>
                     </div>
                 </div>
 
@@ -113,13 +113,13 @@
         </div>
         <footer>
             <div class="logo">
-                <a href="index.html"><img src="logo.jpg" alt="logo" title="Passion Plante"></a>
+                <a href="index.php"><img src="img/logo.jpg" alt="logo" title="Passion Plante"></a>
             </div>
             <div class="copyright"><u>Passion Plante</u> codé par Mehdi ALA</div>
             <div class="social">
-                <a href="https://twitter.com/"><img src="twitter.png" target="_blank" alt="Twitter"></a>
-                <a href="https://www.instagram.com/"><img src="instagram.png" target="_blank" alt="Instagram"></a>
-                <a href="https://www.linkedin.com/in/mehdi-ala-299930176/"><img src="linkedin.png" target="_blank" alt="Linkedin"></a>
+                <a href="https://twitter.com/"><img src="img/twitter.png" target="_blank" alt="Twitter"></a>
+                <a href="https://www.instagram.com/"><img src="img/instagram.png" target="_blank" alt="Instagram"></a>
+                <a href="https://www.linkedin.com/in/mehdi-ala-299930176/"><img src="img/linkedin.png" target="_blank" alt="Linkedin"></a>
             </div>
         </footer>
     </body>

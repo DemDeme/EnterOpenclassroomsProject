@@ -13,7 +13,7 @@
         <!-- Starting de la page d'accueil -->
         <header>
             <div class="logo">
-                <a href="index.html"><img src="logo.jpg" alt="logo" title="Passion Plante"></a>
+                <a href="index.php"><img src="img/logo.jpg" alt="logo" title="Passion Plante"></a>
             </div>
             <div id="navbarh">
                 <nav class="navbar navbar-expand-lg navbar-light">
@@ -23,13 +23,13 @@
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link" href="index.html">Accueil<span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="index.php">Accueil<span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="encyclopedia.html">Encyclopédie</a>
+                                <a class="nav-link" href="encyclopedia.php">Encyclopédie</a>
                             </li>
                             <li class="nav-item active">
-                                <a class="nav-link" href="contact.html">Contact</a>
+                                <a class="nav-link" href="contact.php">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -39,7 +39,7 @@
         <div id="find">
             <div id="find-bloc">
                 <div class="find-img">
-                    <img src="jardin.jpg">
+                    <img src="img/jardin.jpg">
                 </div>
                 <div class="find-txt">
                     <h1>Où nous trouver ?</h1>
@@ -73,7 +73,7 @@
         </div>
         <footer>
             <div class="logo">
-                <a href="index.html"><img src="logo.jpg" alt="logo" title="Passion Plante"></a>
+                <a href="index.php"><img src="logo.jpg" alt="logo" title="Passion Plante"></a>
             </div>
             <div class="copyright"><u>Passion Plante</u> codé par Mehdi ALA</div>
             <div class="social">

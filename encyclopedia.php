@@ -13,7 +13,7 @@
     <body>
         <header>
             <div class="logo">
-                <a href="index.html"><img src="logo.jpg" alt="logo" title="Passion Plante"></a>
+                <a href="index.php"><img src="img/logo.jpg" alt="logo" title="Passion Plante"></a>
             </div>
             <div id="navbarh">
                 <nav class="navbar navbar-expand-lg navbar-light">
@@ -23,13 +23,13 @@
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link" href="index.html">Accueil<span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="index.php">Accueil<span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item active">
-                                <a class="nav-link" href="encyclopedia.html">Encyclopédie</a>
+                                <a class="nav-link" href="encyclopedia.php">Encyclopédie</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="contact.html">Contact</a>
+                                <a class="nav-link" href="contact.php">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -104,36 +104,36 @@
                 <div class="some-pictures">
                     <h2>En image</h2>
                     <div class="pictures">
-                        <a href="wp1.jpg" class="pic-hover">
-                            <img src="wp1.jpg">
+                        <a href="img/wp1.jpg" class="pic-hover">
+                            <img src="img/wp1.jpg">
                             <div class="middle">Voir la photo</div>
                         </a>
-                        <a href="wp2.jpg" class="pic-hover">
-                            <img src="wp2.jpg">
+                        <a href="img/wp2.jpg" class="pic-hover">
+                            <img src="img/wp2.jpg">
                             <div class="middle">Voir la photo</div>
                         </a>
-                        <a href="wp3.jpg" class="pic-hover">
-                            <img src="wp3.jpg">
+                        <a href="img/wp3.jpg" class="pic-hover">
+                            <img src="img/wp3.jpg">
                             <div class="middle">Voir la photo</div>
                         </a>
-                        <a href="wp4.jpg" class="pic-hover">
-                            <img src="wp4.jpg">
+                        <a href="img/wp4.jpg" class="pic-hover">
+                            <img src="img/wp4.jpg">
                             <div class="middle">Voir la photo</div>
                         </a>
-                        <a href="wp3.jpg" class="pic-hover">
-                            <img src="wp3.jpg">
+                        <a href="img/wp3.jpg" class="pic-hover">
+                            <img src="img/wp3.jpg">
                             <div class="middle">Voir la photo</div>
                         </a>
-                        <a href="wp4.jpg" class="pic-hover">
-                            <img src="wp4.jpg">
+                        <a href="img/wp4.jpg" class="pic-hover">
+                            <img src="img/wp4.jpg">
                             <div class="middle">Voir la photo</div>
                         </a>
-                        <a href="wp1.jpg" class="pic-hover">
-                            <img src="wp1.jpg">
+                        <a href="img/wp1.jpg" class="pic-hover">
+                            <img src="img/wp1.jpg">
                             <div class="middle">Voir la photo</div>
                         </a>
-                        <a href="wp2.jpg" class="pic-hover">
-                            <img src="wp2.jpg">
+                        <a href="img/wp2.jpg" class="pic-hover">
+                            <img src="img/wp2.jpg">
                             <div class="middle">Voir la photo</div>
                         </a>
                     </div>
@@ -142,7 +142,7 @@
         </div>
         <footer>
             <div class="logo">
-                <a href="index.html"><img src="logo.jpg" alt="logo" title="Passion Plante"></a>
+                <a href="index.php"><img src="img/logo.jpg" alt="logo" title="Passion Plante"></a>
             </div>
             <div class="copyright"><u>Passion Plante</u> codé par Mehdi ALA</div>
             <div class="social">
