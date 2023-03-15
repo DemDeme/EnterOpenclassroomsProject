@@ -26,7 +26,7 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2531.629777242388!2d3.0656772159005734!3d50.61541658334522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2d5bf5d6bb13b%3A0x64fb9dfb82857c32!2sJardin%20des%20Plantes!5e0!3m2!1sfr!2sfr!4v1678725772014!5m2!1sfr!2sfr" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <div id="form-contact">
-            <form method="post" action="#">
+            <form method="post" action="src/model/mail.php">
                 <div class="form">
                     <div class="one form-lab"><label for="name">Nom : </label></div>
                     <div class="two"><input type="text" name="name" placeholder="Indiquez ici votre nom" id="name" size="66px" required></div>

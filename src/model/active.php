@@ -13,11 +13,11 @@ class Active
     public function getActive(string $title) : Nav
     {
         $nav = new Nav();
-        if($title == "Accueil")
+        if($title == "Contact")
         {
-            $nav->homepage = "active";
+            $nav->homepage = "";
             $nav->encyclopedia = "";
-            $nav->contact = "";
+            $nav->contact = "active";
         }
     elseif($title == "Encyclopédie")
         {
@@ -27,9 +27,9 @@ class Active
         }
     else
         {
-            $nav->homepage = "";
+            $nav->homepage = "active";
             $nav->encyclopedia = "";
-            $nav->contact = "active";
+            $nav->contact = "";
         }
         return $nav;
     }
