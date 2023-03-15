@@ -1,6 +1,4 @@
-<?php
-    $title = "Encyclopédie";
-    
+<?php    
     ob_start();
 ?>
 
@@ -110,6 +108,5 @@
 <?php 
     $content = ob_get_clean();
 
-    require('src/model/active.php');
     require('templates/layout.php');
 ?>

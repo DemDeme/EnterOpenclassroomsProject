@@ -25,10 +25,10 @@
                                 <a class="nav-link" href="index.php">Accueil<span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item <?= $navig->encyclopedia ?>">
-                                <a class="nav-link" href="encyclopedia.php">Encyclopédie</a>
+                                <a class="nav-link" href="index.php?action=post&id=1">Encyclopédie</a>
                             </li>
                             <li class="nav-item <?= $navig->contact ?>">
-                                <a class="nav-link" href="contact.php">Contact</a>
+                                <a class="nav-link" href="index.php?action=post">Contact</a>
                             </li>
                         </ul>
                     </div>

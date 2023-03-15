@@ -1,6 +1,4 @@
 <?php
-    $title = "Contact";
-    
     ob_start();
 ?>
         <!-- Starting de la page d'accueil -->
@@ -44,6 +42,5 @@
 <?php 
     $content = ob_get_clean();
 
-    require('src/model/active.php');
     require('templates/layout.php');
 ?>

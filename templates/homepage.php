@@ -39,7 +39,7 @@
     $i=0;
     while($i<=2) {
 ?>
-        <a href="encyclopedia.php#spec" class="link-hover">
+        <a href="index.php?action=post&id=1#spec" class="link-hover">
             <img src="img/wp<?= $i+1 ?>.jpg">
             <div class="middle">Philodendron "White Princess"</div>
         </a>
@@ -75,7 +75,7 @@
                             La sansevieria est idéale en hiver, et grâce à ses feuilles graphiques et design, c'est la plante parfaite 
                             pour embellir nos décors !
                         </p>
-                        <a href="encyclopedia.php#spec" alt="Choix de la Rédac"><button type="button" class="btn btn-success">Venez la découvrir</button></a>
+                        <a href="index.php?action=post&id=1#spec" alt="Choix de la Rédac"><button type="button" class="btn btn-success">Venez la découvrir</button></a>
                     </div>
                 </div>
 
