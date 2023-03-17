@@ -1,13 +1,8 @@
-/* *
-{
-    margin: 0;
-} */
 body
 {
     font-family: sans-serif;
     margin:0;
 }
-
 a 
 {
     color: #000;
@@ -20,7 +15,6 @@ h1
 footer
 {
     display: flex;
-    /* padding: 30px 0 30px 0; */
     width: 100%;
     position: relative;
     bottom: 0;
@@ -35,7 +29,6 @@ footer
     width: 100%;
     border-radius: 10px;
 }
-
 .copyright
 {
     margin: auto;
@@ -120,7 +113,6 @@ header
 {
     display: block;
 }
-
 table
 {
     border-radius: 10px;
@@ -154,7 +146,6 @@ td
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* background-color: blue; */
     text-align: center;
     max-width: 1080px;
     margin: auto;
@@ -167,7 +158,6 @@ td
 }
 .pres-img
 {
-    
     width: 25%;
 }
 .pres-img img
@@ -193,7 +183,6 @@ td
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* background-color: blue; */
     text-align: center;
     max-width: 1080px;
     margin: auto;
@@ -214,13 +203,11 @@ td
 }
 .redac-txt
 {
-    /* background-color: red; */
     width: 60%;
     text-align: center;
 }
 .redac-rand
 {
-    /*police diff de stand*/
     font-size: 20px;
     margin: auto;
     width: 80%;

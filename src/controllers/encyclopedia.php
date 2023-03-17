@@ -9,7 +9,7 @@ require_once('src/model/plant.php');
 use Application\Model\Active\Active;
 use Application\Lib\Database\DatabaseConnection;
 use Application\Model\Plant\PlantSheet;
-
+//Generate "Encyclopedia" Page whith id parameter
 class Encyclopedia
 {
     public function execute($title, $identifier)

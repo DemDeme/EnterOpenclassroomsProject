@@ -34,7 +34,7 @@ class TopPlant
     public string $desc2;
     public string $url;
 }
-
+//Generate 3 tables for 3 last posts
 class LastPosts
 {
     public DatabaseConnection $connection;
@@ -56,9 +56,13 @@ class LastPosts
         return $plants;
     }
 }
+
+//Generate Sheet for each plant with own "id", complete menu and list all photos
 class PlantSheet
 {
     public DatabaseConnection $connection;
+
+    //Function for sheet
     public function plantSheet(int $identifier) : Plant
     {
         $statement = $this->connection->getConnection()->prepare(
@@ -87,7 +91,7 @@ class PlantSheet
                 
         return $plant;
     }
-    //COMPRENDRE POURQUOI CA BUUUUG !!!!!!!
+    //Function for photos list
     public function photos(int $identifier) : array
     {
         $statement = $this->connection->getConnection()->prepare(
@@ -102,6 +106,7 @@ class PlantSheet
         }
         return $photos;
     }
+    //Function for complete menu
     public function menu() : array
     {
         $statement = $this->connection->getConnection()->query(
@@ -118,6 +123,7 @@ class PlantSheet
     }
 }
 
+//Function who choose randomly a plant whith high rank (7<rank<10) and complete homepage "Le Choix de la Redac' ?"
 class RandomTop
 {
     public DatabaseConnection $connection;

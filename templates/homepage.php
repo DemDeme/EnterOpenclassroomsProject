@@ -1,7 +1,6 @@
 <?php
-    $title = "Accueil";
-
     ob_start();
+    //Template Homepage
 ?>
 
         <div id="presentation">
@@ -33,8 +32,6 @@
         <div id="posts-div">
             <h1>Derniers posts</h1>
             <div class="posts">
-<!--   BOUCLE LES 3 DERNIERS POSTS
-    A REMPLIR QUAND BDD TERMINEE   -->
 <?php 
     $i=0;
     while($i<=2) {

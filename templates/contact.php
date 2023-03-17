@@ -1,7 +1,9 @@
 <?php
     ob_start();
+
+    //Template contact page
 ?>
-        <!-- Starting de la page d'accueil -->
+
 
         <div id="find">
             <div id="find-bloc">

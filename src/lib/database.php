@@ -1,7 +1,7 @@
 <?php
 
 namespace Application\Lib\Database;
-
+//Object PDO for creating database connection
 class DatabaseConnection
 {
     public ?\PDO $database = null;
