@@ -8,7 +8,6 @@ require_once('src/model/plant.php');
 
 use Application\Model\Active\Active;
 use Application\Lib\Database\DatabaseConnection;
-// use Application\Model\Plant\LastPosts;
 use Application\Model\Plant\PlantSheet;
 
 class Encyclopedia
@@ -23,6 +22,8 @@ class Encyclopedia
         $sheetRepository = new PlantSheet();
         $sheetRepository->connection = $connection;
         $sheet = $sheetRepository->plantSheet($identifier);
+        $photo = $sheetRepository->photos($identifier);
+        $menu = $sheetRepository->menu();
 
         require_once('templates/encyclopedia.php');
     }

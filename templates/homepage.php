@@ -57,7 +57,7 @@
                 </div>
                 <div class="redac-txt">
                     <div class="redac-stand">
-                        <h1>Le Choix de la Rédac'?</h1>
+                        <h1>Le Choix de la Rédac' ?</h1>
                         <p>
                             En panne d'inspiration ? Des doutes quant à l'association de tes plantes ?
                         </p>

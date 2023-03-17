@@ -3,19 +3,19 @@
 ?>
 
         <div class="plant-rand">
-            <ul class="nav flex-column css-enc">
+            <ul class="nav flex-column css-enc"> 
+            <?php
+                $i=0;
+                while(isset($menu[$i]))
+                {
+            ?>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Sansevieria</a>
+                    <a class="nav-link" href="index.php?action=post&id=<?= $i ?> "><?= $menu[$i] ?></a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">White Princess</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Disabled</a>
-                </li>
+            <?php
+                $i++;    
+                }
+            ?>
             </ul>
             <main>
                 <div id="spec">
@@ -49,38 +49,19 @@
                 <div class="some-pictures">
                     <h2>En image</h2>
                     <div class="pictures">
-                        <a href="img/wp1.jpg" class="pic-hover">
-                            <img src="img/wp1.jpg">
-                            <div class="middle">Voir la photo</div>
-                        </a>
-                        <a href="img/wp2.jpg" class="pic-hover">
-                            <img src="img/wp2.jpg">
-                            <div class="middle">Voir la photo</div>
-                        </a>
-                        <a href="img/wp3.jpg" class="pic-hover">
-                            <img src="img/wp3.jpg">
-                            <div class="middle">Voir la photo</div>
-                        </a>
-                        <a href="img/wp4.jpg" class="pic-hover">
-                            <img src="img/wp4.jpg">
-                            <div class="middle">Voir la photo</div>
-                        </a>
-                        <a href="img/wp3.jpg" class="pic-hover">
-                            <img src="img/wp3.jpg">
-                            <div class="middle">Voir la photo</div>
-                        </a>
-                        <a href="img/wp4.jpg" class="pic-hover">
-                            <img src="img/wp4.jpg">
-                            <div class="middle">Voir la photo</div>
-                        </a>
-                        <a href="img/wp1.jpg" class="pic-hover">
-                            <img src="img/wp1.jpg">
-                            <div class="middle">Voir la photo</div>
-                        </a>
-                        <a href="img/wp2.jpg" class="pic-hover">
-                            <img src="img/wp2.jpg">
-                            <div class="middle">Voir la photo</div>
-                        </a>
+                        <?php
+                            $i=0;
+                            while($i<8)
+                                {
+                        ?>
+                                    <a href="img/<?= $photo[$i] ?>" class="pic-hover">
+                                        <img src="img/<?= $photo[$i] ?>">
+                                        <div class="middle">Voir la photo</div>
+                                    </a>
+                        <?php
+                            $i++;    
+                            }
+                        ?>
                     </div>
                 </div>
             </main>

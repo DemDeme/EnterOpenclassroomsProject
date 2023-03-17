@@ -91,20 +91,30 @@ class PlantSheet
     public function photos(int $identifier) : array
     {
         $statement = $this->connection->getConnection()->prepare(
-            "SELECT \name FROM photos WHERE id_plant = ?"
+            "SELECT name FROM photos WHERE id_plant = ?"
         );
         $statement->execute([$identifier]);
         
-        $row = $statement->fetch();
-
         $photos = [];
         while($row = $statement->fetch())
         {
             $photos[] = $row['name'];
         }
-
-
         return $photos;
+    }
+    public function menu() : array
+    {
+        $statement = $this->connection->getConnection()->query(
+            "SELECT id, name_website FROM plants"
+        );
+        // $statement->execute([$identifier]);
+        
+        $menu = [];
+        while($row = $statement->fetch())
+        {
+            $menu[] = $row['name_website'];
+        }
+        return $menu;
     }
 }
 

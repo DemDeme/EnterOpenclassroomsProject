@@ -4,9 +4,6 @@ require_once('src/controllers/homepage.php');
 require_once('src/controllers/encyclopedia.php');
 require_once('src/controllers/contact.php');
 
-
-$title = "Encyclopédie";
-
 use Application\Controllers\Homepage\Homepage;
 use Application\Controllers\Encyclopedia\Encyclopedia;
 use Application\Controllers\Contact\Contact;

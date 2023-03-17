@@ -239,3 +239,8 @@ td
     background-color: #33D496; 
     padding : 100px 0 500px 0;
 }
+.link-hover img 
+{
+  width: 100%;
+  object-fit: cover;
+}
