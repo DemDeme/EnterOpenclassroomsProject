@@ -9,23 +9,27 @@ require_once('src/model/plant.php');
 use Application\Model\Active\Active;
 use Application\Lib\Database\DatabaseConnection;
 use Application\Model\Plant\LastPosts;
-use Application\Model\Plant\PlantSheet;
+use Application\Model\Plant\RandomTop;
 
 
 
 class Homepage
 {
 
-    public function execute($title, $identifier)
+    public function execute($title)
     {
-        $connexion = new DatabaseConnection();
+        $connection = new DatabaseConnection();
         
         $nav = new Active();
         $navig = $nav->getActive($title);
 
         $postRepository = new LastPosts();
-        $postRepository->connection = $connexion;
-        $post = $postRepository->lastPosts();
+        $postRepository->connection = $connection;
+        $posts = $postRepository->lastPosts();
+
+        $randomTop = new RandomTop();
+        $randomTop->connection = $connection;
+        $selected = $randomTop->getRandomTop();
 
         require('templates/homepage.php');
     }

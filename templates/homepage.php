@@ -39,9 +39,9 @@
     $i=0;
     while($i<=2) {
 ?>
-        <a href="index.php?action=post&id=1#spec" class="link-hover">
-            <img src="img/wp<?= $i+1 ?>.jpg">
-            <div class="middle">Philodendron "White Princess"</div>
+        <a href="index.php?action=post&id=<?= $posts[$i]->id?>#spec" class="link-hover">
+            <img src="img/<?= $posts[$i]->url?>">
+            <div class="middle"><?= $posts[$i]->name?></div>
         </a>
 <?php
         $i++;
@@ -52,8 +52,8 @@
         <div id="redac">
             <div class="redac-bloc">
                 <div class="redac-img">
-                    <img id="redac-rand-img" src="img/sanseveria.jpg">
-                    <h2>Sansevieria</h2>
+                    <img id="redac-rand-img" src="img/<?= $selected->url?>">
+                    <h2><?= $selected->name?></h2>
                 </div>
                 <div class="redac-txt">
                     <div class="redac-stand">
@@ -66,16 +66,8 @@
                         </p>
                     </div>
                     <div class="redac-rand">
-                        <p>
-                            Avec ses longues feuilles élégantes qui s'élancent dans les airs, la sansevieria est une plante qui 
-                            figure parmi les plus faciles d'entretien. Robuste, elle s'adapte à tous les types d'éclairage et 
-                            supporte les arrosages irréguliers, en plus d'être une plante dépolluante.
-                        </p>
-                        <p>
-                            La sansevieria est idéale en hiver, et grâce à ses feuilles graphiques et design, c'est la plante parfaite 
-                            pour embellir nos décors !
-                        </p>
-                        <a href="index.php?action=post&id=1#spec" alt="Choix de la Rédac"><button type="button" class="btn btn-success">Venez la découvrir</button></a>
+                        <p><?= $selected->desc1?></p>
+                        <a href="index.php?action=post&id=<?= $selected->id?>#spec" alt="Choix de la Rédac"><button type="button" class="btn btn-success">Venez la découvrir</button></a>
                     </div>
                 </div>
 

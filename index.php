@@ -22,7 +22,7 @@ try
             }
             else {
                 $title = "Encyclopédie";
-                (new Encyclopedia())->execute($title);
+                (new Encyclopedia())->execute($title, $identifier);
             }
         }
     else {

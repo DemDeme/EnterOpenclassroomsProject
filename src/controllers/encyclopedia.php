@@ -8,7 +8,7 @@ use Application\Model\Active\Active;
 
 class Encyclopedia
 {
-    public function execute($title)
+    public function execute($title, $identifier)
     {
         $nav = new Active();
         $navig = $nav->getActive($title);
