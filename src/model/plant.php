@@ -112,7 +112,6 @@ class PlantSheet
         $statement = $this->connection->getConnection()->query(
             "SELECT id, name_website FROM plants"
         );
-        // $statement->execute([$identifier]);
         
         $menu = [];
         while($row = $statement->fetch())
