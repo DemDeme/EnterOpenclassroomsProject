@@ -1,8 +1,6 @@
 <?php
 
-require_once('active.php');
-
-use Application\Model\Active\Active;
+//PHP code for sending message (Contact Form)
 
 //A TESTER LORS DE LA MISE EN LIGNE DU SITE (PORT 25 WAMP BLOQUE)
 $name = $_POST['name'];
@@ -20,7 +18,5 @@ mail($to,$subject,$message);
 
 $title = "Mail envoyé !";
 $content = "";
-// sleep(5);
-//sleep à corriger pour qu'il attende 5sec sur la page et non 5sec avant de charger la page.
 
 require('../../templates/simpleLayout.php');

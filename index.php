@@ -1,5 +1,7 @@
 <?php
 
+//Index page (Control the controllers !)
+
 require_once('src/controllers/homepage.php');
 require_once('src/controllers/encyclopedia.php');
 require_once('src/controllers/contact.php');

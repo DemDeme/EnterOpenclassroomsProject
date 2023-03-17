@@ -12,7 +12,7 @@ use Application\Model\Plant\LastPosts;
 use Application\Model\Plant\RandomTop;
 
 
-
+//Generate "Homepage" Page
 class Homepage
 {
 

@@ -1,5 +1,6 @@
 <?php    
     ob_start();
+    //Template Encyclopedia page
 ?>
 
         <div class="plant-rand">

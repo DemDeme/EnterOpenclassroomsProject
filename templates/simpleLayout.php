@@ -1,3 +1,5 @@
+<!-- Simple layout page for print confirmation page when mail is send (contact page) -->
+
 <!DOCTYPE html>
 <html lang="fr">
     <head>
