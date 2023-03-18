@@ -22,13 +22,18 @@
                 <div id="spec">
                     <h1><?= $sheet->name ?></h1>
                     <div id="desc">
-                        <p>
-                            <strong>Nom scientifique : </strong><?= $sheet->scientist ?><br>
-                            <strong>Nom commun : </strong><?= $sheet->common ?><br>
-                            <strong>Famille : </strong><?= $sheet->family ?><br>
-                            <strong>Origine : </strong><?= $sheet->origin ?><br>
-                            <strong>Emplacement : </strong><?= $sheet->localization ?><br>
-                        </p>
+                        <div class="sheet-head">
+                            <p><strong>Nom scientifique : </strong><?= $sheet->scientist ?><br></p>
+                            <p><strong>Nom commun : </strong><?= $sheet->common ?><br></p>
+                            <p><strong>Famille : </strong><?= $sheet->family ?><br></p>
+                            <p><strong>Origine : </strong><?= $sheet->origin ?><br></p>
+                            <p><strong>Emplacement : </strong><?= $sheet->localization ?><br></p>
+                        </div>
+                        <div class="sheet-img">
+                            <img src="img/<?= $sheet->url ?>">
+                        </div>
+                    </div>
+                    <div class="desc-content">
                         <p><?= $sheet->desc1 ?></p>
                         <p><?= $sheet->desc2 ?></p>
                         <p><?= $sheet->desc3 ?></p>
@@ -51,16 +56,14 @@
                     <h2>En image</h2>
                     <div class="pictures">
                         <?php
-                            $i=0;
-                            while($i<8)
+                            for($i=0; $i<8; $i++)
                                 {
                         ?>
                                     <a href="img/<?= $photo[$i] ?>" class="pic-hover">
                                         <img src="img/<?= $photo[$i] ?>">
                                         <div class="middle">Voir la photo</div>
                                     </a>
-                        <?php
-                            $i++;    
+                        <?php  
                             }
                         ?>
                     </div>

@@ -24,22 +24,25 @@
                         et toi aussi apprend à bichonné tes bébés ! 
                     </p>
                 </div>
+
                 <div class="pres-img">
-                    <img src="img/pres-pic.jpg">
+                    <img src="img/pres-pic.jpg" class="pres-image">
                 </div>
             </div>
         </div>
         <div id="posts-div">
-            <h1>Derniers posts</h1>
+            <h1>Derniers Posts</h1>
             <div class="posts">
 <?php 
     $i=0;
     while($i<=2) {
 ?>
-        <a href="index.php?action=post&id=<?= $posts[$i]->id?>#spec" class="link-hover">
-            <img src="img/<?= $posts[$i]->url?>">
-            <div class="middle"><?= $posts[$i]->name?></div>
-        </a>
+                <div class="box-post">
+                    <a href="index.php?action=post&id=<?= $posts[$i]->id?>#spec" class="link-hover">
+                        <img src="img/<?= $posts[$i]->url?>">
+                        <div class="middle"><?= $posts[$i]->name?></div>
+                    </a>
+                </div>
 <?php
         $i++;
     }
@@ -47,24 +50,30 @@
             </div>
         </div>
         <div id="redac">
+            <!-- BLOC -->
             <div class="redac-bloc">
-                <div class="redac-img">
-                    <img id="redac-rand-img" src="img/<?= $selected->url?>">
-                    <h2><?= $selected->name?></h2>
+                <!-- FIXE -->
+                <div class="redac-stand">
+                    <h1>Le Choix de la Rédac' ?</h1>
+                    <p>
+                        En panne d'inspiration ? Des doutes quant à l'association de tes plantes ?
+                    </p>
+                    <p>
+                        Pourquoi ne pas te laisser inspiré par notre talentueuse rédaction ? Qui sait ce que tu y découvriras !
+                    </p>
                 </div>
-                <div class="redac-txt">
-                    <div class="redac-stand">
-                        <h1>Le Choix de la Rédac' ?</h1>
-                        <p>
-                            En panne d'inspiration ? Des doutes quant à l'association de tes plantes ?
-                        </p>
-                        <p>
-                            Pourquoi ne pas te laisser inspiré par notre talentueuse rédaction ? Qui sait ce que tu y découvriras !
-                        </p>
+                <!-- BLOC RANDOM -->
+                <div class="redac-rand">
+                    <!-- IMAGE -->
+                    <div class="redac-img">
+                        <img id="redac-rand-img" src="img/<?= $selected->url?>">
+                        <h2><?= $selected->name?></h2>
                     </div>
-                    <div class="redac-rand">
-                        <p><?= $selected->desc1?></p>
-                        <a href="index.php?action=post&id=<?= $selected->id?>#spec" alt="Choix de la Rédac"><button type="button" class="btn btn-success">Venez la découvrir</button></a>
+                    <!-- TEXT -->
+                    <div class="redac-text">
+                        <p><?= $selected->desc1 ?></p>
+                        
+                        <div class="btn-discover"><a href="index.php?action=post&id=<?= $selected->id ?>#spec" alt="Choix de la Rédac" class="btn-discover"><button type="button" class="btn btn-success">Venez la découvrir</button></a></div>
                     </div>
                 </div>
 

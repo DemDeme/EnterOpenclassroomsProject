@@ -1,6 +1,6 @@
 body
 {
-    font-family: sans-serif;
+    font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
     margin:0;
 }
 a 
@@ -10,7 +10,9 @@ a
 
 h1
 {
-    font-size: 2.5em;
+    font-size: 5em;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 900;
 }
 footer
 {
@@ -67,7 +69,7 @@ header
 }
 #posts-div
 {
-    margin: 100px 0 180px;
+    margin: 100px 0 230px 0;
     text-align: center;
 }
 #posts-div h1
@@ -77,23 +79,25 @@ header
 .posts
 {
     margin-top: 100px;
-    height: 250px;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
 .posts img
 {
     max-width: 100%;
-    height: 250px;
+    height: 300px;
 }
-
+.box-post
+{
+    height: 300px;
+    width: 100%;
+    background: red;
+    overflow: hidden;
+}
 .link-hover
 {
     position: relative;
-    color: black;
-    opacity: 0.8;
     height: 250px;
-
 }
 .middle
 {
@@ -103,15 +107,25 @@ header
     right: 0;
     bottom: 0;
     padding-top: 33%;
-    text-align: center;
-    font-size: 1.2em;
+    margin: auto;
+    font-size: 1.4em;
     color: white;
-    background-color: rgba(0, 0, 0, 0.7);
-    display: none;
+    opacity: 0;
+}
+.link-hover img
+{
+    width: 100%;
+    opacity: 0.8;
+    transition: transform 0.2s;
+    object-fit: cover;
 }
 .link-hover:hover .middle
 {
-    display: block;
+    opacity: 1;
+}
+.link-hover:hover img
+{
+    transform: scale(1.3);
 }
 table
 {
@@ -156,62 +170,85 @@ td
     width: 50%;
     text-align: center;
 }
+.pres-txt p
+{
+    font-size: 1.05em;
+}
 .pres-img
 {
-    width: 25%;
+    margin-left: 8%;
+    width: 35%;
 }
-.pres-img img
+.pres-image
 {
     width: 100%;
 }
+
 #redac
 {
     background-color: #39FFB2;
     width: 100%;
     padding: 50px 0 50px 0;
 }
-#redac h1
-{
-    color: #33D496;
-}    
-#redac h2
-{
-    color: brown;
-}
 .redac-bloc
 {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
     max-width: 1080px;
     margin: auto;
-    padding: 0 5% 0 5%;
 }
-.redac-choice
+.redac-stand
 {
-    width: 30%;
+    text-align: center;
+    margin-bottom: 50px;
 }
-.redac-img
+.redac-stand p
 {
-    width: 30%;
+    font-size: 1.1em;
+}
+.redac-stand h1
+{
+    margin-bottom: 50px;
+}
+.redac-rand
+{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1080px;
+    width: 100%;
+    margin: auto;
+}
+.redac-rand h2
+{
+    text-align: center;
+    padding-top: 30px;
+}
+.redac-rand div
+{
+    width: 50%;
 }
 .redac-img img
 {
     width: 100%;
-    margin-bottom: 20px;
+    height: 400px;
+    object-fit: cover;
+    padding-left : 10%;
 }
-.redac-txt
+.redac-text 
 {
-    width: 60%;
+    display: flex;
+    flex-direction: column;
+    text-align: center ;
+}
+.redac-text p
+{
+    font-size: 1.2em;
+    width:80%;
+    margin: auto;
     text-align: center;
 }
-.redac-rand
+.btn-discover
 {
-    font-size: 20px;
+    position: relative;
     margin: auto;
-    width: 80%;
-    padding: 50px 0 100px 0;
 }
 .mail
 {
@@ -226,11 +263,8 @@ td
     background-color: #33D496; 
     padding : 100px 0 500px 0;
 }
-.link-hover img 
-{
-  width: 100%;
-  object-fit: cover;
-}
+
+
 /*Style de la dernière page pour OpenClassroom*/
 .oc-box
 {

@@ -1,0 +1,35 @@
+.box
+{
+    display: flex;
+    margin: 100px 0 0 100px;
+    width: 250px;
+    height: 250px;
+    /* background: red; */
+    z-index: 1;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.image
+{
+    flex-wrap: nowrap;
+    width: 100%;
+    opacity: 0.8;
+    transition: transform 0.2s;
+    object-fit: cover;
+    z-index: 1;
+}
+.box:hover .image
+{
+    transform: scale(1.2);
+}
+.text
+{
+    position: relative;
+    bottom: 20px;
+    opacity: 0;
+    z-index: 2;
+}
+.box:hover .text
+{
+    opacity: 1;
+}

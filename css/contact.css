@@ -36,9 +36,17 @@
 }
 .find-txt
 {
-    width: 50%;
+    width: 60%;
     text-align: left;
-    padding-left: 100px;
+    padding-left: 50px;
+}
+.find-txt h1
+{
+    font-size: 4em;
+}
+.find-txt p
+{
+    padding-left: 30px;
 }
 .find-img
 {
