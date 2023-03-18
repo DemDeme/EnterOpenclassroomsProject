@@ -32,6 +32,9 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="../../index.php?action=post">Contact</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="ocpage.php">OpenClassroom</a>
+                            </li>
                         </ul>
                     </div>
                 </nav>

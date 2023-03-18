@@ -231,3 +231,54 @@ td
   width: 100%;
   object-fit: cover;
 }
+/*Style de la dernière page pour OpenClassroom*/
+.oc-box
+{
+    display: flex;
+    flex-direction: column;
+    background-color: #33D496; 
+    padding : 100px 0 100px 0;
+}
+.oc-box div
+{
+    margin-bottom: 50px; 
+}
+.video
+{
+    max-width: 1080px; 
+    margin : auto;
+    padding: 30px; 
+    border: 1px solid; 
+    border-radius: 10px;
+}
+.dl
+{
+    max-width: 1080px; 
+    margin : auto; 
+    padding: 30px; 
+    border: 1px solid; 
+    border-radius: 10px;
+}
+.dl a
+{
+    text-align: center;
+}
+.oc-links
+{
+    width: 500px; 
+    margin : auto; 
+    padding: 30px;
+    text-align: center; 
+    border: 1px solid; 
+    border-radius: 10px;
+}
+.oc-links img
+{
+    width: 50px;
+    margin-right: 30px;
+}
+.oc-links a
+{
+    font-size: 2.5em;
+    margin-right: 30px;
+}
